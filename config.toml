@@ -1,0 +1,17 @@
+baseURL = "https://example.com/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Dodge Darkroom Hours"
+
+[Author]
+    name = "Columbia University School of the Arts Photography Department"
+
+[params]
+
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:vaphotofellow@gmail.com"
+
+      

@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<main>
+    <div class="column left">
+        <img src="images/portrait.png" width="300" height="300" class="portrait" />
+    </div>
+    <div class="column right">
+        <h2>Darkroom Hours</h2>
+	<p>Dodge Darkroom, School of the Arts,<br> Columbia University in the City of New York.</p>
+        <div>{{- partial "introduction.html" . -}}</div>
+        
+	<p><a href="http://arts.columbia.edu/photography/">Photo Department Website</a></p>
+        <div class="links">
+            {{- range .Site.Params.links -}}
+                <a href="{{ .url }}" title="{{ .title }}">
+                    <span class="{{ .iconset | default "fab" }} fa-{{ .icon }}"></span>
+                </a>
+            {{- end -}}
+        </div>
+    </div>
+</main>
+
+{{ end }}
